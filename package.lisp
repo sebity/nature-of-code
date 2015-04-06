@@ -5,14 +5,38 @@
   (:nicknames #:noc)
   (:export
    #:update-swank
-   #:draw-pixel))
+   #:draw-pixel
+   #:draw-box
+   #:draw-box-stroke
+   #:draw-circle
+   #:draw-circle-filled
+   #:draw-circle-filled-alpha
+   #:draw-ellipse-filled))
+
+
+(defpackage #:maths
+  (:use #:cl)
+  (:export 
+   #:square
+   #:random-gaussian
+   #:map-range))
+
+
+(defpackage #:noise
+  (:use #:cl)
+  (:export 
+   #:noise-1d))
 
 
 (defpackage #:noc-intro
-  (:use #:cl #:nature-of-code)
+  (:use #:cl #:nature-of-code #:noise)
   (:export
    #:help
-   #:random-walker))
+   #:random-walk
+   #:random-distribution
+   #:random-walk-right-bias
+   #:gaussian
+   #:noise-walk))
 
 
 (defpackage #:noc-vectors
