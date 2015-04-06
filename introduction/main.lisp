@@ -5,7 +5,8 @@
 
 (defparameter *walker* nil)
 (defparameter *random-counts* nil)
-
+(defparameter *tx* nil)
+(defparameter *ty* nil)
 
 (defstruct walker
   (x 0)

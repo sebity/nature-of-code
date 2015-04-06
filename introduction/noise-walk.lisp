@@ -1,9 +1,5 @@
 (in-package #:noc-intro)
 
-(defparameter *tx* (random 1d0))
-(defparameter *ty* (random 1d0))
-
-
 (defun draw-noise-walker ()
   (let ((dx (maths:map-range (noise:noise-1d *tx*) -1 1 0 *width*))
 	(dy (maths:map-range (noise:noise-1d *ty*) -1 1 0 *height*)))
@@ -23,7 +19,9 @@
 
 (defun setup-noise ()
   (setf *width* 640)
-  (setf *height* 300))
+  (setf *height* 300)
+  (setf *tx* (random 1d0))
+  (setf *ty* (random 1d0)))
 
 
 (defun noise-walk ()
