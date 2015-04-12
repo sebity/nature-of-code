@@ -21,5 +21,9 @@
 			 (:file "noise-walk")))
    (:module "vectors/"
 	    :components ((:file "main")
-			 (:file "bouncing-ball-no-vectors")))))
+			 (:file "bouncing-ball-no-vectors")
+			 (:file "bouncing-ball")
+			 (:file "vector-subtraction")
+			 (:file "vector-multiplication")
+			 (:file "vector-division")))))
 

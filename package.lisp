@@ -6,6 +6,7 @@
   (:export
    #:update-swank
    #:draw-pixel
+   #:draw-line
    #:draw-box
    #:draw-box-stroke
    #:draw-circle
@@ -43,4 +44,8 @@
   (:use #:cl #:nature-of-code)
   (:export
    #:help
-   #:bouncing-ball-no-vectors))
+   #:bouncing-ball-no-vectors
+   #:bouncing-ball
+   #:vector-subtraction
+   #:vector-multiplication
+   #:vector-division))
