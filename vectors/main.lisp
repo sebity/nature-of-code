@@ -34,6 +34,11 @@
   (setf (x vec) (/ (x vec) n))
   (setf (y vec) (/ (y vec) n)))
 
+
+(defun mag-vectors (vec)
+  (sqrt (+ (* (x vec) (x vec))
+	   (* (y vec) (y vec)))))
+
 (defun help ()
   (format t "Vectors~%")
   (format t "=======~%~%")
