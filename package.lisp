@@ -49,4 +49,5 @@
    #:vector-subtraction
    #:vector-multiplication
    #:vector-division
-   #:vector-magnitude))
+   #:vector-magnitude
+   #:vector-normalize))

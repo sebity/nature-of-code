@@ -26,5 +26,6 @@
 			 (:file "vector-subtraction")
 			 (:file "vector-multiplication")
 			 (:file "vector-division")
-			 (:file "vector-magnitude")))))
+			 (:file "vector-magnitude")
+			 (:file "vector-normalize")))))
 
