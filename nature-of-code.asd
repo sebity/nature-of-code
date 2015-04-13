@@ -25,5 +25,6 @@
 			 (:file "bouncing-ball")
 			 (:file "vector-subtraction")
 			 (:file "vector-multiplication")
-			 (:file "vector-division")))))
+			 (:file "vector-division")
+			 (:file "vector-magnitude")))))
 

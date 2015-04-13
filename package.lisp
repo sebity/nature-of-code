@@ -48,4 +48,5 @@
    #:bouncing-ball
    #:vector-subtraction
    #:vector-multiplication
-   #:vector-division))
+   #:vector-division
+   #:vector-magnitude))
