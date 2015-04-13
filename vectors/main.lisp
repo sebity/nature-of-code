@@ -52,4 +52,6 @@
   (format t "> bouncing-ball~%")
   (format t "> vector-subtraction~%")
   (format t "> vector-multiplication~%")
-  (format t "> vector-division~%"))
+  (format t "> vector-division~%")
+  (format t "> vector-magnitude~%")
+  (format t "> vector-normalize~%"))
