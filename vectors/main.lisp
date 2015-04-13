@@ -39,6 +39,12 @@
   (sqrt (+ (* (x vec) (x vec))
 	   (* (y vec) (y vec)))))
 
+(defun normalize-vectors (vec)
+  (let ((m (mag-vectors vec)))
+    (if (zerop m)
+	0
+	(div-vectors vec m))))
+
 (defun help ()
   (format t "Vectors~%")
   (format t "=======~%~%")
