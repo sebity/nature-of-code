@@ -4,6 +4,7 @@
 (defparameter *height* 400)
 (defparameter *location* nil)
 (defparameter *velocity* nil)
+(defparameter *acceleration* nil)
 (defparameter *mouse* nil)
 (defparameter *center* nil)
 
@@ -11,6 +12,7 @@
 (defparameter *y* 0)
 (defparameter *xspeed* 0)
 (defparameter *yspeed* 0)
+(defparameter *topspeed* 0)
 
 
 (defclass pvector ()
@@ -34,7 +36,6 @@
   (setf (x vec) (/ (x vec) n))
   (setf (y vec) (/ (y vec) n)))
 
-
 (defun mag-vectors (vec)
   (sqrt (+ (* (x vec) (x vec))
 	   (* (y vec) (y vec)))))
@@ -44,6 +45,14 @@
     (if (zerop m)
 	0
 	(div-vectors vec m))))
+
+(defun limit-vectors (vec limit)
+  (if (> (x vec) limit)
+      (setf (x vec) limit))
+
+  (if (> (y vec) limit)
+      (setf (y vec) limit)))
+
 
 (defun help ()
   (format t "Vectors~%")
