@@ -50,4 +50,5 @@
    #:vector-multiplication
    #:vector-division
    #:vector-magnitude
-   #:vector-normalize))
+   #:vector-normalize
+   #:motion-101))
