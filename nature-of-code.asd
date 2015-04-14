@@ -28,5 +28,6 @@
 			 (:file "vector-division")
 			 (:file "vector-magnitude")
 			 (:file "vector-normalize")
-			 (:file "motion-101")))))
+			 (:file "motion-101")
+			 (:file "motion-101-acceleration")))))
 

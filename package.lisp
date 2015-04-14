@@ -51,4 +51,5 @@
    #:vector-division
    #:vector-magnitude
    #:vector-normalize
-   #:motion-101))
+   #:motion-101
+   #:motion-101-acceleration))
