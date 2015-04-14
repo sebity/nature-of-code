@@ -54,4 +54,5 @@
   (format t "> vector-multiplication~%")
   (format t "> vector-division~%")
   (format t "> vector-magnitude~%")
-  (format t "> vector-normalize~%"))
+  (format t "> vector-normalize~%")
+  (format t "> motion-101~%"))
