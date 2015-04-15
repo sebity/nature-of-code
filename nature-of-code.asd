@@ -29,5 +29,6 @@
 			 (:file "vector-magnitude")
 			 (:file "vector-normalize")
 			 (:file "motion-101")
-			 (:file "motion-101-acceleration")))))
+			 (:file "motion-101-acceleration")
+			 (:file "motion-101-random-acceleration")))))
 
