@@ -19,6 +19,9 @@
   ((x :initarg :x :initform 0 :accessor x)
    (y :initarg :y :initform 0 :accessor y)))
 
+(defun equal-vectors (vec-1 vec-2)
+  (setf (x vec-1) (x vec-2))
+  (setf (y vec-1) (y vec-2)))
 
 (defun add-vectors (vec-1 vec-2)
   (setf (x vec-1) (+ (x vec-1) (x vec-2)))
@@ -39,6 +42,10 @@
 (defun mag-vectors (vec)
   (sqrt (+ (* (x vec) (x vec))
 	   (* (y vec) (y vec)))))
+
+(defun setmag-vectors (vec n)
+  (normalize-vectors vec)
+  (mult-vectors vec n))
 
 (defun normalize-vectors (vec)
   (let ((m (mag-vectors vec)))
@@ -71,4 +78,5 @@
   (format t "> vector-normalize~%")
   (format t "> motion-101~%")
   (format t "> motion-101-acceleration~%")
-  (format t "> motion-101-random-acceleration~%"))
+  (format t "> motion-101-random-acceleration~%")
+  (format t "> motion-101-acceleration-towards-mouse~%"))
