@@ -47,11 +47,16 @@
 	(div-vectors vec m))))
 
 (defun limit-vectors (vec limit)
-  (if (> (x vec) limit)
-      (setf (x vec) limit))
+  (let ((length-squared (+ (* (x vec) (x vec))
+			   (* (y vec) (y vec)))))
+    (unless (< length-squared (* limit limit))
+      (setf (x vec) (* (x vec) (/ limit (sqrt length-squared))))
+      (setf (y vec) (* (y vec) (/ limit (sqrt length-squared)))))))
 
-  (if (> (y vec) limit)
-      (setf (y vec) limit)))
+
+(defun random-2d-vectors (vec)
+  (setf (x vec) (- (random 2.0) 1))
+  (setf (y vec) (- (random 2.0) 1)))
 
 
 (defun help ()
@@ -64,4 +69,6 @@
   (format t "> vector-division~%")
   (format t "> vector-magnitude~%")
   (format t "> vector-normalize~%")
-  (format t "> motion-101~%"))
+  (format t "> motion-101~%")
+  (format t "> motion-101-acceleration~%")
+  (format t "> motion-101-random-acceleration~%"))
