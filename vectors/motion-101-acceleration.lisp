@@ -44,7 +44,7 @@
 (defun motion-101-acceleration ()
   (setup-ex-1-8)
   (sdl:with-init (sdl:sdl-init-video)
-    (sdl:window *width* *height* :title-caption "Motion 101 (Velocity)")
+    (sdl:window *width* *height* :title-caption "Motion 101 (Constant Acceleration)")
     (setf (sdl:frame-rate) 30)
     (sdl:clear-display sdl:*white*)
 
