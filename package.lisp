@@ -54,4 +54,5 @@
    #:motion-101
    #:motion-101-acceleration
    #:motion-101-random-acceleration
-   #:motion-101-acceleration-towards-mouse))
+   #:motion-101-acceleration-towards-mouse
+   #:motion-101-array-movers-towards-mouse))

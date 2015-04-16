@@ -31,5 +31,6 @@
 			 (:file "motion-101")
 			 (:file "motion-101-acceleration")
 			 (:file "motion-101-random-acceleration")
-			 (:file "motion-101-acceleration-towards-mouse")))))
+			 (:file "motion-101-acceleration-towards-mouse")
+			 (:file "motion-101-array-movers-towards-mouse")))))
 
