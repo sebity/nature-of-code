@@ -7,6 +7,7 @@
 (defparameter *acceleration* nil)
 (defparameter *mouse* nil)
 (defparameter *center* nil)
+(defparameter *movers* nil)
 
 (defparameter *x* 0)
 (defparameter *y* 0)
@@ -18,6 +19,12 @@
 (defclass pvector ()
   ((x :initarg :x :initform 0 :accessor x)
    (y :initarg :y :initform 0 :accessor y)))
+
+(defclass mover ()
+  ((location :initarg :location :initform nil :accessor location)
+   (velocity :initarg :velocity :initform nil :accessor velocity)
+   (topspeed :initarg :topspeed :initform nil :accessor topspeed)))
+
 
 (defun equal-vectors (vec-1 vec-2)
   (setf (x vec-1) (x vec-2))
@@ -79,4 +86,5 @@
   (format t "> motion-101~%")
   (format t "> motion-101-acceleration~%")
   (format t "> motion-101-random-acceleration~%")
-  (format t "> motion-101-acceleration-towards-mouse~%"))
+  (format t "> motion-101-acceleration-towards-mouse~%")
+  (format t "> motion-101-array-movers-towards-mouse~%"))
