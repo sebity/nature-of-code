@@ -29,6 +29,29 @@
    #:noise-1d))
 
 
+(defpackage #:pvector
+  (:use #:cl)
+  (:export
+   #:pvector
+   #:add
+   #:dist
+   #:div
+   #:equal-to
+   #:get-x
+   #:get-y
+   #:get-z
+   #:limit
+   #:mag
+   #:mult
+   #:normalize
+   #:random-2d
+   #:random-3d
+   #:set-x
+   #:set-y
+   #:set-z
+   #:setmag
+   #:sub))
+
 (defpackage #:noc-intro
   (:use #:cl #:nature-of-code #:noise)
   (:export
@@ -56,3 +79,10 @@
    #:motion-101-random-acceleration
    #:motion-101-acceleration-towards-mouse
    #:motion-101-array-movers-towards-mouse))
+
+
+(defpackage #:noc-forces
+  (:use #:cl #:nature-of-code #:pvector)
+  (:export
+   #:help
+   #:forces-2-1))

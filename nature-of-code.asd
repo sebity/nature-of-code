@@ -11,6 +11,7 @@
    (:file "maths")
    (:file "noise")
    (:file "primitives")
+   (:file "pvector")
    (:file "utils")
    (:module "introduction/"
 	    :components ((:file "main")
@@ -32,5 +33,8 @@
 			 (:file "motion-101-acceleration")
 			 (:file "motion-101-random-acceleration")
 			 (:file "motion-101-acceleration-towards-mouse")
-			 (:file "motion-101-array-movers-towards-mouse")))))
+			 (:file "motion-101-array-movers-towards-mouse")))
+   (:module "forces/"
+	    :components ((:file "main")
+			 (:file "forces-2-1")))))
 
