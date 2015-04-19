@@ -18,4 +18,5 @@
 (defun help ()
   (format t "Introduction~%")
   (format t "============~%~%")
-  (format t "> forces-2-1~%"))
+  (format t "> forces-2-1~%")
+  (format t "> forces-2-2~%"))
