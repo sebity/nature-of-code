@@ -36,5 +36,6 @@
 			 (:file "motion-101-array-movers-towards-mouse")))
    (:module "forces/"
 	    :components ((:file "main")
-			 (:file "forces-2-1")))))
+			 (:file "forces-2-1")
+			 (:file "forces-2-2")))))
 

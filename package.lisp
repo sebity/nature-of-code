@@ -85,4 +85,5 @@
   (:use #:cl #:nature-of-code #:pvector)
   (:export
    #:help
-   #:forces-2-1))
+   #:forces-2-1
+   #:forces-2-2))
