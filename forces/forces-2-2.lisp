@@ -55,12 +55,6 @@
       (set-y velocity (* (get-y velocity) -1)))))
 
 
-;;;; apply-force
-(defun apply-force (m force)
-  (div force (mass m))
-  (add (acceleration m) force)) 
-
-
 ;;;; render-2-2
 (defun render-2-2 ()
   (update-swank)
