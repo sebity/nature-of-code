@@ -6,6 +6,7 @@
 (defparameter *movers* nil)
 (defparameter *wind* nil)
 (defparameter *gravity* nil)
+(defparameter *friction* nil)
 
 (defclass mover ()
   ((location :initarg :location :initform nil :accessor location)
@@ -26,4 +27,5 @@
   (format t "============~%~%")
   (format t "> forces-2-1~%")
   (format t "> forces-2-2~%")
-  (format t "> forces-2-3~%"))
+  (format t "> forces-2-3~%")
+  (format t "> forces-2-4~%"))
