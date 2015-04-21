@@ -1,7 +1,7 @@
 (in-package #:noc-forces)
 
-;;;; forces
-(defun forces (m wind gravity)
+;;;; apply-forces-2-1
+(defun apply-forces-2-1 (m wind gravity)
   (set-x wind 0.01)
   (set-y wind 0)
 
@@ -59,7 +59,7 @@
 (defun render-2-1 ()
   (update-swank)
   (sdl:clear-display sdl:*white*)
-  (forces *movers* *wind* *gravity*)
+  (apply-forces-2-1 *movers* *wind* *gravity*)
   (update-2-1 *movers*)
   (display-2-1 *movers*)
   (check-edges-2-1 *movers*)
