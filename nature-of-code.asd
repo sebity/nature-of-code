@@ -38,5 +38,6 @@
 	    :components ((:file "main")
 			 (:file "forces-2-1")
 			 (:file "forces-2-2")
-			 (:file "forces-2-3")))))
+			 (:file "forces-2-3")
+			 (:file "forces-2-4")))))
 
