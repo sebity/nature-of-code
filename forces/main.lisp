@@ -16,7 +16,8 @@
    (velocity :initarg :velocity :initform nil :accessor velocity)
    (acceleration :initarg :acceleration :initform nil :accessor acceleration)
    (topspeed :initarg :topspeed :initform nil :accessor topspeed)
-   (mass :initarg :mass :initform 1 :accessor mass)))
+   (mass :initarg :mass :initform 1 :accessor mass)
+   (gravity :initarg :gravity :initform 1 :accessor gravity)))
 
 
 (defclass attractor ()
@@ -77,4 +78,5 @@
   (format t "> forces-2-4~%")
   (format t "> forces-2-5~%")
   (format t "> forces-2-6~%")
-  (format t "> forces-2-7~%"))
+  (format t "> forces-2-7~%")
+  (format t "> forces-2-8~%"))
