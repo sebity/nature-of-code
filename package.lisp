@@ -20,7 +20,8 @@
   (:export 
    #:square
    #:random-gaussian
-   #:map-range))
+   #:map-range
+   #:constrain))
 
 
 (defpackage #:noise
@@ -89,4 +90,6 @@
    #:forces-2-2
    #:forces-2-3
    #:forces-2-4
-   #:forces-2-5))
+   #:forces-2-5
+   #:forces-2-6
+   #:forces-2-7))

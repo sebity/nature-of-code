@@ -40,5 +40,7 @@
 			 (:file "forces-2-2")
 			 (:file "forces-2-3")
 			 (:file "forces-2-4")
-			 (:file "forces-2-5")))))
+			 (:file "forces-2-5")
+			 (:file "forces-2-6")
+			 (:file "forces-2-7")))))
 
