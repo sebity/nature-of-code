@@ -12,3 +12,11 @@
   (+ min2 
      (* (- max2 min2) 
 	(/ (- value min1) (- max1 min1)))))
+
+
+(defun constrain (value min max)
+  (if (< value min)
+      min
+      (if (> value max)
+	  max
+	  value)))
