@@ -5,6 +5,7 @@
 
 (defparameter *movers* nil)
 (defparameter *liquids* nil)
+(defparameter *attractors* nil)
 (defparameter *wind* nil)
 (defparameter *gravity* nil)
 (defparameter *friction* nil)
@@ -16,6 +17,15 @@
    (acceleration :initarg :acceleration :initform nil :accessor acceleration)
    (topspeed :initarg :topspeed :initform nil :accessor topspeed)
    (mass :initarg :mass :initform 1 :accessor mass)))
+
+
+(defclass attractor ()
+  ((location :initarg :location :initform nil :accessor location)
+   (mass :initarg :mass :initform 1 :accessor mass)
+   (gravity :initarg :gravity :initform 1 :accessor gravity)
+   (dragging :initarg :dragging :initform 0 :accessor dragging)
+   (rollover :initarg :rollover :initform 0 :accessor rollover)
+   (drag-offset :initarg :drag-offset :initform nil :accessor drag-offset)))
 
 
 (defclass liquid ()
@@ -41,6 +51,22 @@
     (mult d drag-mag)))
 
 
+(defun attract (a m)
+  (let* ((force (make-instance 'pvector
+			       :x (- (get-x (location a)) (get-x (location m)))
+			       :y (- (get-y (location a)) (get-y (location m)))))
+	 (d (mag force))
+	 (strength 0))
+
+    (setf d (maths:constrain d 5.0 25.0))
+    (normalize force)
+    (setf strength (/ (* (gravity a) (mass a) (mass m))
+		      (* d d)))
+    (mult force strength)
+    force))
+
+
+
 ;;;; help
 (defun help ()
   (format t "Introduction~%")
@@ -49,4 +75,6 @@
   (format t "> forces-2-2~%")
   (format t "> forces-2-3~%")
   (format t "> forces-2-4~%")
-  (format t "> forces-2-5~%"))
+  (format t "> forces-2-5~%")
+  (format t "> forces-2-6~%")
+  (format t "> forces-2-7~%"))
