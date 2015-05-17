@@ -20,3 +20,9 @@
       (if (> value max)
 	  max
 	  value)))
+
+(defun rad-to-deg (radians)
+  (/ (* radians 180.0) pi))
+
+(defun deg-to-rad (degrees)
+  (/ (* degrees pi) 180.0))
