@@ -26,3 +26,10 @@
 
 (defun deg-to-rad (degrees)
   (/ (* degrees pi) 180.0))
+
+(defun rotate (pt-x pt-y pos-x pos-y angle)
+  (let* ((dx (- (* pt-x (cos (deg-to-rad angle)))
+		(* pt-y (sin (deg-to-rad angle)))))
+	 (dy (+ (* pt-x (sin (deg-to-rad angle)))
+		(* pt-y (cos (deg-to-rad angle))))))
+    (list (+ (floor dx) pos-x) (+ (floor dy) pos-y))))
