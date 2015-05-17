@@ -43,5 +43,7 @@
 			 (:file "forces-2-5")
 			 (:file "forces-2-6")
 			 (:file "forces-2-7")
-			 (:file "forces-2-8")))))
-
+			 (:file "forces-2-8")))
+   (:module "oscillation/"
+	    :components ((:file "main")
+			 (:file "oscillation-3-1")))))

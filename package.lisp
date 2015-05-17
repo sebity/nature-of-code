@@ -21,7 +21,10 @@
    #:square
    #:random-gaussian
    #:map-range
-   #:constrain))
+   #:constrain
+   #:deg-to-rad
+   #:rad-to-deg
+   #:rotate))
 
 
 (defpackage #:noise
@@ -94,3 +97,10 @@
    #:forces-2-6
    #:forces-2-7
    #:forces-2-8))
+
+
+(defpackage #:noc-oscillation
+  (:use #:cl #:nature-of-code #:pvector)
+  (:export
+   #:help
+   #:osccilation-3-1))
