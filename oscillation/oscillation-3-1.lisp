@@ -15,8 +15,8 @@
 (defun display-3-1 (m)
   (let* ((loc-x (get-x (location m)))
 	 (loc-y (get-y (location m)))
-	 (pt1 (maths:rotate -60 0 loc-x loc-y (angle m)))
-	 (pt2 (maths:rotate 60 0 loc-x loc-y (angle m))))
+	 (pt1 (maths:rotate -50 0 loc-x loc-y (angle m)))
+	 (pt2 (maths:rotate 50 0 loc-x loc-y (angle m))))
     (draw-line (first pt1) (second pt1) (first pt2) (second pt2) 0 0 0)
     (draw-circle-filled (first pt1) (second pt1) 8 0 0 0)
     (draw-circle-filled (first pt2) (second pt2) 8 0 0 0)))
@@ -46,7 +46,7 @@
 				:mass 1
 				:angle 0
 				:a-velocity 0
-				:a-acceleration 0.001)))
+				:a-acceleration 0.01)))
 
 
 ;;;; oscillation-3-1
